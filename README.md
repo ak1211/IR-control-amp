@@ -15,7 +15,7 @@ All rights reserved.
 
 ## Compile and Link
 Atmel Studio 7で[solution file](https://github.com/ak1211/IR-control-amp/blob/master/AudioAmpApplication/AudioAmpApplication.atsln)
-を開いてコンパイル＆リンク行ってください。
+を開いてコンパイル＆リンクを行ってください。
 
 ## License
 [MIT](https://github.com/ak1211/IR-control-amp/blob/master/LICENSE)
