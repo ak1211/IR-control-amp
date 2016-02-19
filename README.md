@@ -8,6 +8,11 @@ Infra Red remote control amplifier firmware on atmega328p
 赤外線リモコンコントロールヘッドホンアンプ基板Rev: A2.x用  
 組込みファームウエアです。
 
+## Requirements
+Atmel Studio 7 (Version: 7.0.594 - )
+© 2015 Atmel Corp.
+All rights reserved.
+
 ## License
 [MIT](https://github.com/ak1211/IR-control-amp/blob/master/LICENSE)
 
