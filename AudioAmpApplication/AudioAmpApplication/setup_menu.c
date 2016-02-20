@@ -50,7 +50,7 @@ static const char about_menu_message[] PROGMEM = {
 };
 
 //
-//LICENCEメニューのメッセージ
+//LICENSEメニューのメッセージ
 //プログラムメモリへ配置する
 //
 static const char license_menu_message[] PROGMEM = {
@@ -276,7 +276,7 @@ static const setup_menu_t volume_setup_menu = {
 static uint8_t get_volume_menu_cursor_pos( elevol_t volume )
 {
     volume = elevol_validate_volume (volume);
-    int16_t number = volume + 1;        //番兵の分ずらす
+    int16_t number = volume + 1;        //ガードの分ずらす
     return number;
 }
 
@@ -340,7 +340,7 @@ const setup_menu_t top_setup_menu = {
         {         "Init vol", NULL,                                             init_vol_menu_onFocus_hook,         init_vol_menu_onKeyUp_hook },
         {         "check IR", workspace_for_IR_hook,                            learn_IR_sub_menu_onFocus_hook,     check_IR_menu_onKeyUp_hook },
         {           "ON/OFF", &Saved_EEPROM_data.ircodes[IRCODE_onoff],         learn_IR_menu_onFocus_hook,         learn_IR_menu_onKeyUp_hook },
-        {           "SwSrc", &Saved_EEPROM_data.ircodes[IRCODE_switch_source],  learn_IR_menu_onFocus_hook,         learn_IR_menu_onKeyUp_hook },
+        {            "SwSrc", &Saved_EEPROM_data.ircodes[IRCODE_switch_source], learn_IR_menu_onFocus_hook,         learn_IR_menu_onKeyUp_hook },
         {            "Vol +", &Saved_EEPROM_data.ircodes[IRCODE_volume_up],     learn_IR_menu_onFocus_hook,         learn_IR_menu_onKeyUp_hook },
         {            "Vol -", &Saved_EEPROM_data.ircodes[IRCODE_volume_down],   learn_IR_menu_onFocus_hook,         learn_IR_menu_onKeyUp_hook },
         {             "MUTE", &Saved_EEPROM_data.ircodes[IRCODE_mute],          learn_IR_menu_onFocus_hook,         learn_IR_menu_onKeyUp_hook },
