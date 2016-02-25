@@ -384,7 +384,7 @@ static void messages_menu_onFocus_hook( display_buffer_t display_buf, uint8_t ta
 
 }
 //
-//ABOUT,licenceメニューonKeyUpフック関数
+//ABOUT,licenseメニューonKeyUpフック関数
 //
 static bool messages_menu_onKeyUp_hook( display_buffer_t display_buf, uint8_t target_linenum, void* detail )
 {

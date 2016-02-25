@@ -30,21 +30,26 @@ void periodic_capture_audio_level( audio_level_t *al )
 {
     union UU16LeftRight sampled;
 
+#define CAPTURE(_n)  {                  \
+    ADMUX = 0x40 | _n;                  \
+    ADCSRA |= _BV(ADEN) | _BV(ADSC);    \
+    ADCSRA |= _BV(ADIF);                \
+    loop_until_bit_is_set(ADCSRA, ADIF);\
+    sampled.array[_n] = ADC;            \
+}
     //
     //オーディオレベル取り込み
     //左、右の順で取り込む
     //可能なら同時サンプリングしたいんですけどね
     //
-    for (uint8_t idx=0 ; idx<2 ; idx++) {
-        ADMUX = 0x40 | (idx &1);
-        ADCSRA |= _BV(ADEN) | _BV(ADSC);
-        ADCSRA |= _BV(ADIF);
-        loop_until_bit_is_set(ADCSRA, ADIF);
-        uint32_t value = ADC;
-        //二乗
-        sampled.array[idx] = value * value;
-    }
-
+    CAPTURE(0);
+    CAPTURE(1);
+#undef CAPTURE
+    //
+    //二乗
+    //
+    sampled.u16.left  = sampled.u16.left * sampled.u16.left;
+    sampled.u16.right = sampled.u16.right * sampled.u16.right;
 
     //指針をしばらく置いておくだけの
     //ピークメータの周期減衰処理
