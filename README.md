@@ -22,5 +22,5 @@ Atmel Studio 7で[solution file](https://github.com/ak1211/IR-control-amp/blob/m
 
 ## Author
 [ak1211](https://github.com/ak1211/)
-[blog](http://ak1211.com/)
+[blog](http://ak1211.com/?src=github)
 
