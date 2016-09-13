@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name toragi_201305)(type Legacy)(uri "$(KIPRJMOD)\\Lib\\toragi_201305.mod")(options "")(descr ""))
+  (lib (name mylib)(type KiCad)(uri "$(KIPRJMOD)\\mylib.pretty")(options "")(descr ""))
+  (lib (name mylib_legacy)(type Legacy)(uri "$(KIPRJMOD)\\mylib.mod")(options "")(descr ""))
+)

@@ -1,0 +1,62 @@
+EESchema-DOCLIB  Version 2.0  Date: 2013/02/27 21:42:32
+#
+$CMP 1SS226
+D Double diode
+K DIODE
+$ENDCMP
+#
+$CMP 2SA1162
+F transistors/bipolar/*.*
+$ENDCMP
+#
+$CMP 2SC2712
+F transistors/bipolar/*.*
+$ENDCMP
+#
+$CMP 74AC04
+D Hex Inverter
+$ENDCMP
+#
+$CMP 74HCU04
+D Hex Inverseur
+K HCUMOS not inv
+$ENDCMP
+#
+$CMP AJ-1780
+D Stereo-Mini-Jack
+K stereo mini jack
+$ENDCMP
+#
+$CMP DUAL_VR
+D Dual Volume Resistor
+K VR
+$ENDCMP
+#
+$CMP OPA2134
+D OPAMP OPA2134
+K DIP-8-300_ELL
+F Lib/Datasheet/OPA2134PA_E.pdf
+$ENDCMP
+#
+$CMP OPA2277
+D OPAMP OPA2134
+K DIP-8-300_ELL
+F Lib/Datasheet/OPA2134PA_E.pdf
+$ENDCMP
+#
+$CMP STEREO-MINIJ
+D Stereo-Mini-Jack
+K stereo mini jack
+$ENDCMP
+#
+$CMP SW_SPST
+D SPST Switch
+K switch
+$ENDCMP
+#
+$CMP UPC812
+D OPAMP uPC812
+K DIP-8-300_ELL
+$ENDCMP
+#
+#End Doc Library

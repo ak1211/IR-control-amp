@@ -1,0 +1,101 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AJ-1780
+D Stereo-Mini-Jack
+K stereo mini jack
+$ENDCMP
+#
+$CMP CERALOCK
+D ceramic resonator
+K CERALOCK
+$ENDCMP
+#
+$CMP FDS4935
+D Dual P channel mosfet, so-8
+K FDS4935
+$ENDCMP
+#
+$CMP FDS8958
+D Dual N-P channel mosfet, so-8
+K FDS8958
+$ENDCMP
+#
+$CMP G5V2
+D Omron relay G5V2
+K Relay
+$ENDCMP
+#
+$CMP GND_SUMMING_PT
+D grand summint point
+$ENDCMP
+#
+$CMP LM1972
+D electric attenuetor
+K lm1972
+$ENDCMP
+#
+$CMP LME49600
+D High Current Audio Buffer 
+K Buffer
+$ENDCMP
+#
+$CMP LTC1144
+D LTC1144, DIP-8
+K Switched Capacitor Regurator
+$ENDCMP
+#
+$CMP MAU100_DUAL
+D MINMAX MAU100 Dual
+K Regulator, DCDC
+F http://akizukidenshi.com/download/MAU106.pdf
+$ENDCMP
+#
+$CMP MINMAX_MAU100
+D MINMAX MAU100
+K Regulator, DCDC
+F http://akizukidenshi.com/download/MAU106.pdf
+$ENDCMP
+#
+$CMP NDS9936
+D Dual N-N channel mosfet, so-8
+K NDS9936
+$ENDCMP
+#
+$CMP NJU7223
+D JRC NJU7223 regulator
+K regulator, jrc
+F http://akizukidenshi.com/download/ds/jrc/NJU7223.pdf
+$ENDCMP
+#
+$CMP PGA2311
+D PGA2311
+K volume
+$ENDCMP
+#
+$CMP PL-IRM2161
+D 38kHz, ir receiver
+K PL-IRM2161
+$ENDCMP
+#
+$CMP RECOM_R78E
+D RECOM R78E
+K power regulator, DCDC
+F http://www.recom-power.com/pdf/Innoline/R-78Exx-0.5.pdf
+$ENDCMP
+#
+$CMP S-812C
+D SII S-812C regulator
+K S-812C
+$ENDCMP
+#
+$CMP SO1602
+D SO1602, OLED display
+K 14pin
+$ENDCMP
+#
+$CMP TLP1032
+D TLP1031, opto interruptor
+K TLP1031,opto
+$ENDCMP
+#
+#End Doc Library
