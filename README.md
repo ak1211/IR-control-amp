@@ -21,6 +21,5 @@ Atmel Studio 7で[solution file](https://github.com/ak1211/IR-control-amp/blob/m
 [MIT](https://github.com/ak1211/IR-control-amp/blob/master/LICENSE)
 
 ## Author
-[ak1211](https://github.com/ak1211/)
-[blog](http://ak1211.com/)
+[ak1211](https://github.com/ak1211/) - [blog](https://ak1211.com/index.php)
 
