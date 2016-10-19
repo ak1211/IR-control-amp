@@ -1,14 +1,16 @@
 /*
  * This software for IR control headphone amplifier main board Rev:A2.0 or above.
- * http://ak1211.com
- * Copyright (c) 2015 Akihiro Yamamoto
-
+ * https://github.com/ak1211/IR-control-amp
+ *
+ * Copyright (c) 2015 Akihiro Yamamoto http://ak1211.com
+ *
  * This software is released under the MIT License.
- * http://opensource.org/licenses/mit-license.php
+ * https://github.com/ak1211/IR-control-amp/blob/master/LICENSE
  */
+
 /*
  * ApplicationIncl.h
- * プロジェクト定義ヘッダファイルです。
+ * プロジェクト定義ヘッダファイル
  *
  * Created: 2015/01/04 19:57:16
  *  Author: akihiro
