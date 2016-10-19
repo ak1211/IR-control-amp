@@ -1,11 +1,11 @@
 %
 % 電子ボリュームの減衰値を計算する
-% http://ak1211.com
-% Copyright (c) 2015 Akihiro Yamamoto
+% https://github.com/ak1211/IR-control-amp
 %
+% Copyright (c) 2015 Akihiro Yamamoto https://ak1211.com
 %
-% This software is released under the MIT License.
-% http://opensource.org/licenses/mit-license.php
+% Released under the MIT License.
+% https://github.com/ak1211/IR-control-amp/blob/master/LICENSE
 %
 
 %
@@ -132,17 +132,17 @@ ideal_a_curve = exp(times_of_A*(rotation_travel-1));
 subplot (2,1,1);
 hold on;
 %plot (rotation_travel, ideal_a_curve, 'cm-@*')
-plot (volume_steps, ideal_a_curve, 'cm-@*')
+plot (volume_steps, ideal_a_curve, 'cm-')
 
 evol_curve = make_electric_volume_vect (rotation_travel, ideal_a_curve);
 
 % 電子ボリュームカーブのプロット
 %plot (rotation_travel, evol_curve, 'cb-@o')
-plot (volume_steps, evol_curve, 'cb-@o')
+plot (volume_steps, evol_curve, 'cb-')
 
 % 目盛とか
 axis ([ [min(volume_steps) max(volume_steps)], [0.0 1.0] ]);
-grid minor;
+grid on;
 xlabel ('volume steps');
 ylabel ('Vout/Vin');
 legend ('ideal A curved volume', 'electric volume curve', "location", 'north');
@@ -151,7 +151,7 @@ hold off;
 % Aカーブボリュームのプロット
 subplot (2,1,2);
 hold on;
-plot (volume_steps, 20*log10(ideal_a_curve), 'cm-@*')
+plot (volume_steps, 20*log10(ideal_a_curve), 'cm-')
 
 %
 % LM1972電子ボリュームのデシベル
@@ -170,7 +170,7 @@ printf("\n\n")
 %
 
 % LM1972電子ボリュームのプロット
-plot (volume_steps, lm1972_att, "cb-@o;simulate LM1972 volume at decibel;")
+plot (volume_steps, lm1972_att, "cb-;simulate LM1972 volume at decibel;")
 
 %
 % PGA2311電子ボリュームのデシベル
@@ -190,13 +190,13 @@ printf("\n\n")
 
 
 % PGA2311電子ボリュームのプロット
-plot (volume_steps, PGA2311_att, "cg-@o;simulate PGA2311 volume at decibel;")
+plot (volume_steps, PGA2311_att, "cg-;simulate PGA2311 volume at decibel;")
 
 %
 % 目盛とか
 %
 axis ([ [min(volume_steps) max(volume_steps)], [min(PGA2311_att) max(PGA2311_att)] ]);
-grid minor;
+grid on;
 xlabel ('volume steps');
 ylabel ('attenuation [dB]');
 legend ( 'ideal A curved volume','LM1972 volume steps of decibel', 'PGA2311 volume steps of decibel', "location", 'southeast');
@@ -214,5 +214,4 @@ printf ("// PGA2311_param\n")
 printf ("%3d, ", PGA2311_param)
 printf("\n\n")
 
-%print -Ggswin32c.exe foo.png
-
+print -dsvg vol-att.svg

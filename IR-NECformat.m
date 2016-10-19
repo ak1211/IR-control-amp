@@ -1,10 +1,10 @@
 % 赤外線リモコンコードの可視化
-% https://ak1211.com
-% Copyright (c) 2016 Akihiro Yamamoto
+% https://github.com/ak1211/IR-control-amp
 %
+% Copyright (c) 2016 Akihiro Yamamoto https://ak1211.com
 %
-% This software is released under the MIT License.
-% http://opensource.org/licenses/mit-license.php
+% Released under the MIT License.
+% https://github.com/ak1211/IR-control-amp/blob/master/LICENSE
 %
 
 clear *;
@@ -71,5 +71,3 @@ print -dpng "-S4800, 600" "rawrepeatIR.png"
 
 stem( frame, "filled")
 print -dpng "-S4800, 600" "rawframeIR.png"
-
-
